@@ -1,0 +1,1020 @@
+{
+	"info": {
+		"_postman_id": "416b0710-716d-474e-a86f-be4db90ff114",
+		"name": "Admin Ecom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21494381"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Admin Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@ecom.com\",\r\n    \"password\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/admin/adminLogIn",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"admin",
+								"adminLogIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/admin/adminLogout",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"admin",
+								"adminLogout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"ashishhhhhhhhhbhai\",\r\n    \"lastName\": \"thummerrrrr\",\r\n    \"phone\": \"1234567888\",\r\n    \"phoneCode\": \"+91\",\r\n    \"email\": \"ashish@google.com\",\r\n    \"username\": \"ashish123\",\r\n    \"gender\": \"male\",\r\n    \"birthDate\": \"11-2-2011\",\r\n    \"wallet\": \"500\",\r\n    \"phoneVerify\": \"1\",\r\n    \"password\": \"111\",\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/user/userRegistration",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userRegistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/userViewById/62c7b48b9aa9bc284c3898a5",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userViewById",
+								"62c7b48b9aa9bc284c3898a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/user/userViewAll",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userViewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"trunal\",\r\n    \"lastName\":\"dudhatra\",\r\n    \"phone\":\"1234567890\",\r\n    \"phoneCode\":\"+91\",\r\n    \"email\":\"trunal@gmail.com\",\r\n    \"username\":\"trunal123\",\r\n    \"gender\":\"male\",\r\n    \"birthDate\":\"11-11-2011\",\r\n    \"wallet\":\"50\",\r\n    \"phoneVerify\":\"2\",\r\n    \"password\":\"000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/user/userUpdate/62c7b48b9aa9bc284c3898a5",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userUpdate",
+								"62c7b48b9aa9bc284c3898a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/userDeleteById/62c6d185d899e4b0cf7b85f7",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userDeleteById",
+								"62c6d185d899e4b0cf7b85f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/userCount",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Country",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/country/countryViewAll",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"country",
+								"countryViewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Approved",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/approved",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"approved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Disapproved",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/disApproved",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"disApproved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Approved By Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/user/userApprovedById/62cec0521777d585304ea686",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userApprovedById",
+								"62cec0521777d585304ea686"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Disapproved By Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/user/userDisapprovedById/62ce621e3cdd33dc268b876b",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userDisapprovedById",
+								"62ce621e3cdd33dc268b876b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Active Phone Verify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"phoneVerify\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/user/userPhoneVerifyUpdate/62d2a4f188f1591e99a36589",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"userPhoneVerifyUpdate",
+								"62d2a4f188f1591e99a36589"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Active Phone And Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/inActivePhoneAndEmail",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"inActivePhoneAndEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View InActive Phone And Email Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/user/ininActivePhoneAndEmail",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"user",
+								"ininActivePhoneAndEmail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "Store Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storeName\":\"pc\",\r\n    \"password\":\"000\",\r\n    \"phone\":\"1234577790\",\r\n    \"phoneCode\":\"+91\",\r\n    \"email\":\"pc@gmail.com\",\r\n    \"address\":\"12 abc\",\r\n    \"emailVerify\":\"0\",\r\n    \"phoneVerify\":\"0\",\r\n    \"state\":\"gujrat\",\r\n    \"city\":\"surat\",\r\n    \"status\":\"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeRegistration",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeRegistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Store  By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/storeViewById/62c7d32f6be9e47a4529441b",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeViewById",
+								"62c7d32f6be9e47a4529441b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All Store",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/storeViewAll",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeViewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storeName\":\"khand Bazar\",\r\n    \"password\":\"000\",\r\n    \"phone\":\"1234567890\",\r\n    \"phoneCode\":\"+91\",\r\n    \"email\":\"khandbazar@gmail.com\",\r\n    \"address\":\"gulamo ke juke huve sar hamara address bata dege\",\r\n    \"emailVerify\":\"1\",\r\n    \"phoneVerify\":\"1\",\r\n    \"state\":\"bangalore\",\r\n    \"city\":\"KGF\",\r\n    \"status\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeUpdate/62c7d32f6be9e47a4529441b",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeUpdate",
+								"62c7d32f6be9e47a4529441b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/storeDeleteById/62c7ce4252a1ecf05e930c18",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeDeleteById",
+								"62c7ce4252a1ecf05e930c18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/storeCount",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get State Cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/stateCities/stateCitiesViewAll",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"stateCities",
+								"stateCitiesViewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Country",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/country/countryViewAll",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"country",
+								"countryViewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View State By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/stateCities/stateCitiesViewById/62cbb8b83d2529ae40bf77b6",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"stateCities",
+								"stateCitiesViewById",
+								"62cbb8b83d2529ae40bf77b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete State",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/stateCities/stateCitiesDeleteById/62cbb8b83d2529ae40bf780a",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"stateCities",
+								"stateCitiesDeleteById",
+								"62cbb8b83d2529ae40bf780a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Approved",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/approved",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"approved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Disapproved",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/disApproved",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"disApproved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Approved By Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeApprovedById/62d67a11d2fe2074e474b47b",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeApprovedById",
+								"62d67a11d2fe2074e474b47b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Disapproved By Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeDisapprovedById/62c7d32f6be9e47a4529441b",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeDisapprovedById",
+								"62c7d32f6be9e47a4529441b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Approved Product By Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeApprovedProductById/62d1010e19c6e53edb8d7564",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeApprovedProductById",
+								"62d1010e19c6e53edb8d7564"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Disapproved Product By Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeDisapprovedProductById/62d0fa5719c6e53edb8d709d",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeDisapprovedProductById",
+								"62d0fa5719c6e53edb8d709d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Srore Appoved And Phone And Email Verify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailVerify\": 1,\r\n    \"phoneVerify\":1,\r\n    \"status\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeApprovedByIdAndVerify/62d13ba4f1fc14e74d3bcce2",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeApprovedByIdAndVerify",
+								"62d13ba4f1fc14e74d3bcce2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Srore Disappoved And Phone And Email Verify Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailVerify\": 0,\r\n    \"phoneVerify\":0,\r\n    \"status\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/store/storeDisapprovedByIdAndVerify/62d13ba4f1fc14e74d3bcce2",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"storeDisapprovedByIdAndVerify",
+								"62d13ba4f1fc14e74d3bcce2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View InActive Phone And Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/store/inActivePhoneAndEmail",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"store",
+								"inActivePhoneAndEmail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Product Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\": \"62d65b617a5b6926e0cbfed6\",\r\n    \"product_title\": \"pc web1\",\r\n    \"product_information\": \"it1\",\r\n    \"category\": \"web1\",\r\n    \"qty\": 10110,\r\n    \"regular_price\": \"10110\",\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/product/productRegistration",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productRegistration"
+							],
+							"query": [
+								{
+									"key": "store_id",
+									"value": "62c7d32f6be9e47a4529441b",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Product  By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/product/productViewById/62c809056de1e159a881502f",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productViewById",
+								"62c809056de1e159a881502f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/product/productViewAll",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productViewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\": \"1\",\r\n    \"product_title\": \"bhanu khaman\",\r\n    \"product_information\": \"chana no lot,color-yellow\",\r\n    \"category\": \"food\",\r\n    \"qty\": 1,\r\n    \"regular_price\": \"200\",\r\n    \"extra_price\": \"tame layo e biju kay nay\",\r\n    \"total_price\": \"250\",\r\n    \"status\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/product/productUpdate/62c809056de1e159a881502f",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productUpdate",
+								"62c809056de1e159a881502f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/product/productDeleteById/62cbf64250cc31a53342dc19",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productDeleteById",
+								"62cbf64250cc31a53342dc19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/product/productCount",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/product/productActive",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"product",
+								"productActive"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASEURL",
+			"value": "192.168.1.29:8000",
+			"type": "string"
+		}
+	]
+}
